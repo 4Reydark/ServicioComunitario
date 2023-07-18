@@ -20,14 +20,6 @@ router.post('/trabajador', (req, res) => {
     var rowTrabajador = {};
     // console.log('Cedula: '+idTrabajadores);
     // Condicion para validar que el usuario solo pueda implementar el formulario una sola vez
-    mysqlConnection.query(usuarioEnFormulario,
-        [idTrabajadores],
-        (error, rows, fields) => {
-            if (!error && rows.length > 0) { // Existe en el formulario?
-                // Si
-                res.json({ data: false, trabajador: null, puesto: null, msg: 'Ya ingresó su formulario!' });
-            } else {
-                // No
                 mysqlConnection.query(
                     trabajadoresGetPorCedula,
                     [idTrabajadores],
@@ -54,8 +46,6 @@ router.post('/trabajador', (req, res) => {
                         }
                     }
                 );
-            }
-        });
     // // Cerrar la conexión después de finalizar las consultas
     // mysqlConnection.end();
 });
