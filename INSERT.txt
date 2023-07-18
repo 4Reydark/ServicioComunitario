@@ -1,0 +1,14 @@
+INSERT INTO `puesto_trabajo` (`id_Puesto`, `Campus`, `Descrip`, `Area_Dep`, `Dur_Jornada`) VALUES
+('CONS', 'QUEROCHACA', 'Realiza labores de limpieza', 'ESTADIO', 8),
+('DIR', 'HUACHI', 'Es el encargado de dirigir a la universidad', 'RECTORADO', 8),
+('DOC', 'INGAHURCO ', 'Realiza labores de coordinador de carrera', 'Medicina', 8),
+('GUAR', 'HUACHI', 'Se encarga de la protección del lugar', 'Entrada Universidad', 10),
+('ING', 'HUACHI', 'Realiza labores de profesor en ingeniería ', 'FISEI', 8);
+
+
+
+
+
+
+INSERT INTO `trabajadores` (`idTrabajadores`, `Nom_Tra`, `Ape_Tra`, `Género`, `Fech_Nac`, `Fech_Ini_Pue_act`, `Jornada`, `Foto1`, `Foto2`, `Foto3`, `ID_PUE_REF`) VALUES
+('1750343541', 'Ricky', 'Reivan', 'Masculino', '1999-11-27', '2023-06-29', 'Matutina', NULL, NULL, NULL, 'DIR');

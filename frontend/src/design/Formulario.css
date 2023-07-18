@@ -1,0 +1,191 @@
+   .formulario {
+     /* display: flex; */
+     flex-direction: column;
+     align-items: center;
+     max-width: 600px;
+     /* Aumenta el ancho máximo para que sea similar a Google Forms */
+     margin: 0 auto;
+     color: black;
+     font-family: Arial, sans-serif;
+     /* Utiliza una fuente sans-serif similar a Google Forms */
+   }
+   span{
+    font-weight: bold;
+   }
+
+   div {
+     font-family: Arial, sans-serif;
+     /* Utiliza una fuente sans-serif similar a Google Forms */
+   }
+
+   h1 {
+     color: black;
+     font-size: 24px;
+     /* Aumenta el tamaño del encabezado para mayor legibilidad */
+     margin-bottom: 20px;
+     /* Agrega un espacio entre el encabezado y el formulario */
+    font-family: Arial, sans-serif; /* Utiliza una fuente sans-serif similar a Google Forms */
+   }
+
+   a{
+    font-family: Arial, sans-serif; /* Utiliza una fuente sans-serif similar a Google Forms */
+   }
+   .campo {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Agrega el efecto de desenfoque */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Agrega una sombra alrededor del campo */
+  }
+
+   label {
+     width: 92.5%;
+     font-weight: bold;
+     color: black;
+     font-size: 16px;/* Aumenta el tamaño de la etiqueta */
+   }
+
+   input,
+   textarea {
+     outline: none;
+     width: 96%;
+     padding: 10px;/* Aumenta el espaciado interno para una mejor apariencia */
+     border: none;
+     border-radius: 5px;
+     background-color: rgba(255, 0, 255, 0.1);
+     color: black;
+     font-size: 14px;/* Ajusta el tamaño de fuente para mayor legibilidad */
+     font-family: Arial, sans-serif; /* Utiliza una fuente sans-serif similar a Google Forms */
+   }
+   
+   .boton {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(255, 0, 0, 0.8); /* Cambia el color de fondo a rojo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    backdrop-filter: blur(10px); /* Agrega el efecto de desenfoque */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Agrega una sombra alrededor del botón */
+  }
+  
+  button:hover {
+    background-color: rgba(255, 0, 0, 1);
+  }
+  
+
+/* ----------------------------------------- */
+/* Estilos para los botones de "Si" y "No" */
+/* ----------------------------------------- */
+label.opcion {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+}
+
+label.opcion input[type="checkbox"] {
+  display: none;
+}
+
+label.opcion span {
+  width: 95%;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(255, 0, 255, 0.1);
+  border-radius: 5px;
+}
+label.opcion  span:hover{
+  background-color: rgba(255, 0, 0, 0.589);
+  color: white;
+}
+
+label.opcion input[type="checkbox"]:checked + span {
+  background-color: rgba(255, 0, 0, 0.8);
+  color: white;
+}
+
+select {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(102, 33, 102, 0.829);
+  color: black;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  /* Agrega una apariencia personalizada para el combobox */
+  appearance: none;
+  /* Agrega una flecha personalizada para el combobox */
+  background-image: url('https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png');
+  background-position: right 2% center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  cursor: pointer;
+}
+/* ----------------------------------------- */
+/* ------ Disenio para el combobox --------- */
+/* ----------------------------------------- */
+
+select {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 0.8);
+  color: white;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  /* Agrega una apariencia personalizada para el combobox */
+  appearance: none;
+  /* Agrega una flecha personalizada para el combobox */
+  background-image: url('https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png');
+  background-position: right 2% center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  cursor: pointer;
+}
+select:hover {
+  outline: none;
+  box-shadow: 0 0 5px rgb(102, 11, 11);
+}
+
+select.campo option {
+  /* Cambia el fondo de las opciones a morado */
+  background-color: rgb(102, 11, 11);
+  /* Cambia el color de texto a blanco */
+  color: white;
+  cursor: pointer;
+}
+
+/* Clase para la animación del formulario */
+.formulario-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.formulario-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 500ms, transform 500ms;
+}
+
+  /* Validaciones */
+  .rojo {
+    padding: 10px;
+    border-left: 5px solid red;
+  }
+  
+  .verde {
+    padding: 10px;
+    border-left: 5px solid green;
+  }
